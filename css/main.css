@@ -53,6 +53,12 @@
   flex: 1;
 }
 
+.wrapper {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
 .intro {
   height: 100vh;
   display: flex;
@@ -96,7 +102,6 @@
   }
 }
 
-/* Project section of the site */
 .project-section {
   height: 100vh;
   display: block;
@@ -104,7 +109,6 @@
   margin: 2em 2em;
 }
 
-/* Footer */
 .footer {
   display: flex;
   justify-content: space-between;
