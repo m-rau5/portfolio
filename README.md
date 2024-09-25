@@ -1,2 +1,2 @@
-# portofolio
-My personal portfolio
+# Portofolio
+My personal portfolio - Work in progress
