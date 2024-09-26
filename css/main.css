@@ -1,10 +1,14 @@
-* {
+.wrapper {
   margin: 0;
   padding: 0;
   background-color: #030c0c;
   font-family: "Inter", sans-serif;
   color: #e4f5f4;
   box-sizing: border-box;
+}
+
+body {
+  margin: 0;
 }
 
 .mobile-nav {
@@ -28,8 +32,8 @@
   flex-direction: row;
   justify-content: space-between;
   img {
-    height: 35px;
-    width: 35px;
+    height: 25px;
+    width: 25px;
   }
 }
 
@@ -39,14 +43,28 @@
   align-items: center;
   gap: 2em;
   margin-left: 4em;
+  a {
+    color: #b6c4c3;
+  }
+  a:hover {
+    color: #e4f5f4;
+  }
 }
-
 .right-nav {
   display: flex;
   justify-content: center;
   align-items: center;
   gap: 2em;
   margin-right: 4em;
+  /* Filters for SVG to get same color + hover color */
+  img {
+    filter: invert(20%) sepia(6%) saturate(10%) hue-rotate(103deg)
+      brightness(50%) contrast(92%);
+  }
+  img:hover {
+    filter: invert(0%) sepia(6%) saturate(90%) hue-rotate(103deg)
+      brightness(80%) contrast(92%);
+  }
 }
 .middle-nav {
   display: flex;
@@ -60,7 +78,7 @@
 }
 
 .intro {
-  height: 100vh;
+  height: 100svh;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -82,38 +100,43 @@
   justify-content: center;
   align-items: center;
   .name {
-    margin-bottom: 0.5rem;
+    margin-bottom: 0;
     color: #0ec9bf;
     font-size: 1.4rem;
     font-weight: bold;
   }
-  margin-bottom: 3rem;
+  margin-bottom: 5em;
 }
+
+/* Mobile Version */
 
 @media (max-width: 700px) {
   .desktop-nav {
     display: none;
   }
   .mobile-nav {
+    background-color: #030c0c;
     display: flex;
     align-items: center;
     justify-content: center;
     width: 100%;
+    img {
+      height: 30px;
+      width: 30px;
+    }
+  }
+  .footer-block {
+    margin: 1em 2em;
   }
 }
 
-.project-section {
-  height: 100vh;
-  display: block;
-  justify-content: center;
-  margin: 2em 2em;
-}
+/* Footer Section */
 
-.footer {
+.footer-block {
   display: flex;
-  justify-content: space-between;
   align-items: center;
-  margin: 2em 5em;
+  justify-content: space-between;
+  margin: 1.2em 3.2em;
 }
 
 .footer-text,

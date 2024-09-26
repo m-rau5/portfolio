@@ -1,0 +1,12 @@
+.project-section {
+  height: 100vh;
+  display: block;
+  justify-content: center;
+  margin: 3em 4em;
+}
+
+@media (max-width: 700px) {
+  .project-section {
+    margin: 3em 2em;
+  }
+}
