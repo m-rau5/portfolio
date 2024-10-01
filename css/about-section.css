@@ -6,7 +6,7 @@
   justify-content: center;
 }
 
-.about-container {
+.about-info-container {
   display: grid;
   grid-template-columns: 1fr 1fr;
   row-gap: 2em;
@@ -28,4 +28,41 @@
   bottom: 0px;
   width: 40px;
   margin-bottom: 1rem;
+}
+
+.project-tag {
+  position: absolute;
+  bottom: -102svh;
+  transition: 0.2s;
+  left: 50%;
+}
+
+.project-tag:hover {
+  transform: translateY(-10px);
+  transition: 0.2s;
+}
+
+@media (max-width: 700px) {
+  .about-section {
+    height: 100dvh;
+    margin-left: 2em;
+    margin-right: 2em;
+  }
+  .about-info-container {
+    grid-template-columns: 1fr;
+    row-gap: 1em;
+  }
+
+  .about-details-container {
+    max-width: 500px;
+    font-size: 1rem;
+  }
+
+  .profile-pic {
+    max-width: 200px;
+  }
+
+  .project-tag {
+    display: none;
+  }
 }
