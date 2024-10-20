@@ -107,6 +107,7 @@ body {
 .down-arrow:hover {
   transform: translateY(-10px);
   transition: 0.2s;
+  cursor: pointer;
 }
 
 .intro-page-info {
