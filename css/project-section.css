@@ -27,10 +27,12 @@
 .project-link {
   color: #09968f;
   text-decoration: none;
+  transition: 0.5s;
 }
 
 .project-link:hover {
   color: #0ec9bf;
+  transition: 0.2s;
 }
 
 .project-year {
@@ -156,5 +158,5 @@
 }
 
 .project-preview {
-  max-height: 18dvh;
+  max-height: 18svh;
 }

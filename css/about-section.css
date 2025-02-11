@@ -6,6 +6,18 @@
   justify-content: center;
 }
 
+/* Tried blur but it looks worse :( */
+/* @media (min-width: 700px) {
+  .about-container {
+    position: relative;
+    padding: 2em;
+    border-radius: 5% / 8%;
+    background-color: transparent;
+    backdrop-filter: blur(10px);
+    overflow: hidden;
+  }
+} */
+
 .about-info-container {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -34,23 +46,24 @@
   position: absolute;
   color: #b6c4c3;
   text-decoration: none;
-  bottom: -100svh;
-  transition: 0.2s;
+  bottom: -104svh;
+  transition: 0.5s;
   margin: 0;
   left: 50%;
   transform: translate(-50%, -50%);
+  padding: 0.5em;
 }
 
 .project-tag:hover {
   color: #e4f5f4;
-  transform: translate(-50%, -90%);
-  transition: 0.2s;
+  transform: translate(-50%, -80%);
+  transition: 0.8s cubic-bezier(0.33, -1.81, 0.42, 1.68);
   cursor: pointer;
 }
 
 @media (max-width: 700px) {
   .about-section {
-    height: 100dvh;
+    height: 100svh;
     margin-left: 2em;
     margin-right: 2em;
   }
